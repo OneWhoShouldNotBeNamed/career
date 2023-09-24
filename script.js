@@ -1,9 +1,8 @@
 const ProfileAnalysis = JSON.parse(sessionStorage.getItem("ProfileAnalysis"));
-console.log("ProfileAnalysis", typeof ProfileAnalysis, ProfileAnalysis);
 const Insights = JSON.parse(sessionStorage.getItem("Insight"));
 var submenuContent = [
   [
-    "QuickSummary",
+    "Quick Summary",
     "Skills",
     "Opportunities",
     "Market Analysis",
@@ -70,3 +69,22 @@ function contentLoad(data, menu) {
 document.addEventListener("DOMContentLoaded", function () {
   contentLoad(ProfileAnalysis, submenuContent[0]);
 });
+function navigate() {
+  //pull data from API
+  //  var id = sessionStorage.getItem('Id');
+  var id = 1;
+  fetch(
+    `https://commerce-onewhoshouldnotbenamed.vercel.app/api/data?sheet=CareerSparsh&id=${id}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data,typeof(data))
+
+      sessionStorage.setItem("CCS", JSON.stringify(data[0]));
+      sessionStorage.setItem("DACC", JSON.stringify(data[1]));
+      sessionStorage.setItem("CSA", JSON.stringify(data[2]));
+
+      window.location.href = "./career.html"; // Replace with your desired URL
+    })
+    .catch((error) => console.error("Error fetching data:", error));
+}

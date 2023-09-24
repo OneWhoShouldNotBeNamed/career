@@ -97,16 +97,14 @@
       document.getElementById('submitButton').addEventListener('click', function () {
           // Make an API request (replace with your actual API endpoint)
           const id = document.getElementById('textInput').value;
-          console.log(id)
+          sessionStorage.setItem('Id',id)
           fetch(`https://commerce-onewhoshouldnotbenamed.vercel.app/api/data?sheet=AICO&id=${id}`)
+          // fetch('http://localhost:3000/api/data?sheet=AICO&id=1')
           .then(response => response.json())
-                .then(data => {
-                  // console.log(data[0])
-                  // // Store data in session storage
+                .then(data => {                 
                   sessionStorage.setItem('ProfileAnalysis',JSON.stringify(data[0]));
                   sessionStorage.setItem('Insight', JSON.stringify(data[1]));
-                  // // Navigate to the result page
-                  window.location.href = 'index.html';
+                  window.location.href = './AICO.html';
               })
               .catch(error => console.error('Error fetching data:', error));
       });
