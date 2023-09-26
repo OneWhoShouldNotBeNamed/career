@@ -45,13 +45,13 @@ a , h6{
   }
   
   .left-sec-list-parent{
-    padding-top: 131px;
+    margin-top :320px;
     display: flex;
     gap: 50px;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    height: 100%;
+    /* height: 100%; */
     padding-left: 25px;
     padding-right: 10px;
   

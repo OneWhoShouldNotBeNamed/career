@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +10,16 @@
   <script src="./career.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- for this loading animation  -->
 </head>
+
 <body>
   <section class="main_parent h-screen w-full bg-[#e3eee1] flex justify-between items-center">
-    <div class="bg-[#a0d7b6] lg:w-[45%] 2xl:w-[35%] h-full pl-[60px] pr-[23px] pt-[70px] pb-[70px] flex flex-col justify-center items-center">
+    <div
+      class="bg-[#a0d7b6] lg:w-[45%] 2xl:w-[35%] h-full pl-[60px] pr-[23px] pt-[70px] pb-[70px] flex flex-col justify-center items-center">
 
       <div class="flex justify-between items-center">
         <h1 class="main-heading">Career Sparsh</h1>
@@ -28,25 +32,43 @@
 
       <div class="flex justify-center pt-[70px] h-full w-full">
         <div class="flex flex-col justify-between items-center left-first-border xl:w-[221px]">
-          <div>            
-            <header class="menu_head-underline"><h6 class="menu-heading">Menu</h6><div></div></header>
+          <div>
+            <header class="menu_head-underline">
+              <h6 class="menu-heading">Menu</h6>
+              <div></div>
+            </header>
             <div id="main_menu">
-             <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px] "> <a ref="#" onclick="showSubMenu(0)">Career Counselling Summary</a></li>
-             <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px] "><a href="#" onclick="showSubMenu(1)">Detailed Analysis of Career Counselling</a></li>
-             <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px] "><a href="#" onclick="showSubMenu(2)">Career and Skill Advice</a></li>
-            </div>          </div>
+              <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px] "> <a ref="#"
+                  onclick="showSubMenu(0)">Career Counselling Summary</a></li>
+              <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px] "><a href="#"
+                  onclick="showSubMenu(1)">Detailed Analysis of Career Counselling</a></li>
+              <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px] "><a href="#"
+                  onclick="showSubMenu(2)">Career and Skill Advice</a></li>
+            </div>
+          </div>
           <button>Sign Out</button>
         </div>
         <div class="left-sec-list-parent hidden lg:block xl:w-[221px]">
-          <header class="menu_head-underline menu_head-underline-sec"><h6 class="menu-heading">Sub Menu</h6><div></div></header>
-          <div id="submenu-content" class="overflow-auto" >
-            <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px]"><a href="#" >Personal Details</a></li>
-            <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px]"><a href="#" >Work Experience</a></li>
-            <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px]"><a href="#" >Educational Background</a></li>
-            <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px]"><a href="#" >Career Aspirations</a></li>
-            <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px]"><a href="#" >Language Proficiency</a></li>
-            <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px]"><a href="#" >Future Plans</a></li>
-            <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px]"><a href="#" >Key Takeaways</a></li>
+          <header class="menu_head-underline menu_head-underline-sec">
+            <h6 class="menu-heading">Sub Menu</h6>
+            <div></div>
+          </header>
+          <div id="submenu-content" style="
+          max-height: 700px;
+          overflow-x: hidden;
+          overflow-y: auto;
+      ">
+            <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px]"><a href="#">Personal Details</a>
+            </li>
+            <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px]"><a href="#">Work Experience</a></li>
+            <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px]"><a href="#">Educational
+                Background</a></li>
+            <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px]"><a href="#">Career Aspirations</a>
+            </li>
+            <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px]"><a href="#">Language Proficiency</a>
+            </li>
+            <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px]"><a href="#">Future Plans</a></li>
+            <li class="list-contents text-[16px] xl:text-20 pb-[25px] xl:pb-[50px]"><a href="#">Key Takeaways</a></li>
           </div>
         </div>
       </div>
@@ -54,7 +76,8 @@
     <div class="w-[65%] h-full xl:pr-[60px] right-content" id="content">
       <div>
 
-    </div>
+      </div>
   </section>
 </body>
+
 </html>
